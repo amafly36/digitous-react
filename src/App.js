@@ -27,13 +27,14 @@ class App extends React.Component {
           <p>Heart : {heartMin}</p>
           <p>Temperature : {tempMin}</p>
           <p>Steps : {stepsMin}</p>
-          <Box icon="local_drink" color="#3A85FF"/>
-          <Box/>
-          <Box/>
-          <Box/>
+        
+          <Box icon="local_drink" color="#3A85FF" unit= "L" value= {1.5}/>
+          <Box icon=" directions_walk" color="black" unit= "steps" value= {3000}/>
+          <Box icon="favorite" color="red" unit="bpm" value= {120}/>
+          <Box icon="wb_sunny" color="yellow" unit="°C" value= {-10}/>
 
         </div>
-      </div>
+      </div> 
     );
   }
 }
